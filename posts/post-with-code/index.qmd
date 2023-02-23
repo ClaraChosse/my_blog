@@ -1,13 +1,63 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
-date: "2023-02-10"
-categories: [news, code, analysis]
-image: "image.jpg"
+title: "Heron"
+author: "Clara Chosse"
+date: "2023-02-23"
+categories: [packages, code, analysis]
+image: "triangle.jpg"
 ---
 
-This is a post with executable code.
+# Heron
+
+Ce blog présente le triangle de Sierpiński. 
+Celui ci se construit en reliant les milieux des trois cotés du triangle.
+Chaque itération permet de créer de nouveaux triangles à partir du premier triangle. 
+Chaque triangle est alors remplacé par quatre nouveaux triangles.
+
+<!-- Le package heron est une librairie R qui fournit une fonction pour calculer l'aide d'un triangle en utilisant la formule de Heron. Il prends en entrée trois paramètres (a,b,c) correspondant à la taille des trois coté du triangle. -->
+
+<!-- Pour installer ce package, nous pouvons utiliser les commandes suivantes dans la console R studio :  -->
+
+<!-- install.packages("remotes") -->
+
+<!-- remotes::install_github("ClaraChosse/heron") -->
 
 ```{r}
-1 + 1
+#| echo: false
+library(targets)
 ```
+
+## Triangle de Sierpiński : Itération 1 
+Cette première itération de Sierpiński divise le triangle initial en trois triangles.  
+```{r}
+#| echo: false
+tar_read("plot_1")
+paste("L'aire du triangle 1 est de", tar_read("Aire_1"))
+```
+
+## Triangle de Sierpiński : Itération 2 
+Cette deuxième itération de Sierpiński divise chacun des triangles issus de la première itération en quatre nouveaux triangles. 
+```{r}
+#| echo: false
+tar_read("plot_2")
+paste("L'aire du triangle 2 est de", tar_read("Aire_2"))
+```
+
+## Triangle de Sierpiński : Itération 3
+Cette troisième itération de Sierpiński divise chacun des triangles issus de la deuxième itération en quatre nouveaux triangles. 
+```{r}
+#| echo: false
+tar_read("plot_3")
+paste("L'aire du triangle 3 est de", tar_read("Aire_3"))
+```
+
+## Triangle de Sierpiński : Itération 4
+Cette quatrième itération de Sierpiński divise chacun des triangles issus de la troisième itération en quatre nouveaux triangles. 
+
+```{r}
+#| echo: false
+tar_read("plot_4")
+paste("L'aire du triangle 4 est de", tar_read("Aire_4"))
+```
+
+
+

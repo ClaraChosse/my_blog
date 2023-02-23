@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Heron",
+    "section": "",
+    "text": "Ce blog présente le triangle de Sierpiński. Celui ci se construit en reliant les milieux des trois cotés du triangle. Chaque itération permet de créer de nouveaux triangles à partir du premier triangle. Chaque triangle est alors remplacé par quatre nouveaux triangles.\n\n\n\n\n\n\n\n\n\nCette première itération de Sierpiński divise le triangle initial en trois triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 1 est de 0.0625\"\n\n\n\n\n\nCette deuxième itération de Sierpiński divise chacun des triangles issus de la première itération en quatre nouveaux triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 2 est de 0.015625\"\n\n\n\n\n\nCette troisième itération de Sierpiński divise chacun des triangles issus de la deuxième itération en quatre nouveaux triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 3 est de 0.00390625\"\n\n\n\n\n\nCette quatrième itération de Sierpiński divise chacun des triangles issus de la troisième itération en quatre nouveaux triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 4 est de 0.0009765625\""
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Bienvenue sur mon blog",
+    "section": "",
+    "text": "Bienvenue dans mon blog !"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-1",
+    "href": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-1",
+    "title": "Heron",
+    "section": "Triangle de Sierpiński : Itération 1",
+    "text": "Triangle de Sierpiński : Itération 1\n\n\n\n\n\n[1] \"L'aire du triangle 1 est de 0.0625\""
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-2",
+    "href": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-2",
+    "title": "Heron",
+    "section": "Triangle de Sierpiński : Itération 2",
+    "text": "Triangle de Sierpiński : Itération 2\n\n\n\n\n\n[1] \"L'aire du triangle 2 est de  0.015625\""
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-3",
+    "href": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-3",
+    "title": "Heron",
+    "section": "Triangle de Sierpiński : Itération 3",
+    "text": "Triangle de Sierpiński : Itération 3\n\n\n\n\n\n[1] \"L'aire du triangle 3 est de  0.00390625\""
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-4",
+    "href": "posts/post-with-code/index.html#triangle-de-sierpiński-itération-4",
+    "title": "Heron",
+    "section": "Triangle de Sierpiński : Itération 4",
+    "text": "Triangle de Sierpiński : Itération 4\n\n\n\n\n\n[1] \"L'aire du triangle 4 est de  0.0009765625\""
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my_blog",
+    "section": "",
+    "text": "packages\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nClara Chosse\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\nClara Chosse\n\n\n\n\n\n\nNo matching items"
+  }
+]

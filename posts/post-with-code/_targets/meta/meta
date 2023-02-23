@@ -1,0 +1,22 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|88e89c39d51a23d7|||||||||||||||
+Aire_1|stem|b5addd92d4060699|c59086e5a2a636f4|e7252eadbbd992ce|-1054840515||t19411.4296856555s|b6d2e014b07bc296|51|rds|local|vector|||0.012||
+Aire_2|stem|8524eead3fea8a7e|578ce141873522a6|ec11a1e44fd2019d|1399655896||t19411.4296857923s|b6d2e014b07bc296|51|rds|local|vector|||0||
+Aire_3|stem|9da06c60e93ec946|0a6c07f54d0b844b|a3e306ba49979a21|-1666932666||t19411.4296859187s|b6d2e014b07bc296|51|rds|local|vector|||0.001||
+Aire_4|stem|82ff3b3704bd8cfa|3867fb75a8039fd7|a9443193886cf4d5|-1360313133||t19411.4296861026s|b6d2e014b07bc296|51|rds|local|vector|||0.002||
+distance_cart|function|17cc668557513197|||||||||||||||
+divide_list_triangle|function|b44db212ece51d12|||||||||||||||
+divide_triangle|function|3663b368a4bd9c61|||||||||||||||
+heron_liste|function|536b5de549dc5c9a|||||||||||||||
+Iteration_1|stem|1fc949c3db3d4eba|6a22a15485828e27|412e09fc4c915a8e|1072755410||t19411.4253886569s|9903306e1685fb67|94|rds|local|vector|||0.018||
+Iteration_2|stem|c9f617082e8095c1|0d2651c211a004b8|ed03dd9ed85ef4ba|789532943||t19411.4253892582s|3c9f22cdd675fcde|167|rds|local|vector|||0.002||
+Iteration_3|stem|01474289f4b5a3ce|da82e1a05255f76e|2e16c4c3fdf92a31|1297452447||t19411.4253899375s|55902176c7bf80af|377|rds|local|vector|||0||
+Iteration_4|stem|02a20ca8cd409d25|079a1e7a9e9d8f76|5d93b345c218f3da|-896923642||t19411.425390471s|47ef5c32b223aa3c|896|rds|local|vector|||0.001||
+milieu_segment|function|8297384923b032e9|||||||||||||||
+plot_1|stem|28f05b4cb9076940|2ffe2ec5efaaafad|730f732a2c414655|-1007940262||t19411.4253898353s|8d445de751cb1345|52062|rds|local|vector|||0.024||
+plot_2|stem|1321c26fbc7c3bf3|93a3b0811c132718|71d6410c4e12a99e|-848093080||t19411.4253903538s|f86fc3efe4210f65|52383|rds|local|vector|||0.01||
+plot_3|stem|f374a21f92b5386f|a0fda436eaf95058|552b453767dac18d|548292317||t19411.4253908792s|808483d76c5d26a2|53215|rds|local|vector|||0.01||
+plot_4|stem|a10827d829f4ba06|e134855cf248585c|fe072e077f3c0e37|167123309||t19411.4253914983s|c4e05f24c57a65fa|55626|rds|local|vector|||0.023||
+plot_triangles|function|e1693f4534d5605e|||||||||||||||
+Render_post|stem|f35cbd07243de9d6|a95b8e4bac890e61|dc5240284c0f6969|654301849||t19411.4710362503s|1ba879630a636188|2023|rds|local|vector|||2.484|The function xfunisFALSE will be deprecated in the future. Please consider using baseisFALSEx or identicalx, FALSE instead.|
+triangle_initial|object|09841cb192e8a417|||||||||||||||

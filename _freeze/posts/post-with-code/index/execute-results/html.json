@@ -1,0 +1,16 @@
+{
+  "hash": "c902983b9e9eadfb1a16ef0ff8ae5f0d",
+  "result": {
+    "markdown": "---\ntitle: \"Heron\"\nauthor: \"Clara Chosse\"\ndate: \"2023-02-23\"\ncategories: [packages, code, analysis]\nimage: \"triangle.jpg\"\n---\n\n\n# Heron\n\nCe blog présente le triangle de Sierpiński. \nCelui ci se construit en reliant les milieux des trois cotés du triangle.\nChaque itération permet de créer de nouveaux triangles à partir du premier triangle. \nChaque triangle est alors remplacé par quatre nouveaux triangles.\n\n<!-- Le package heron est une librairie R qui fournit une fonction pour calculer l'aide d'un triangle en utilisant la formule de Heron. Il prends en entrée trois paramètres (a,b,c) correspondant à la taille des trois coté du triangle. -->\n\n<!-- Pour installer ce package, nous pouvons utiliser les commandes suivantes dans la console R studio :  -->\n\n<!-- install.packages(\"remotes\") -->\n\n<!-- remotes::install_github(\"ClaraChosse/heron\") -->\n\n\n::: {.cell}\n\n:::\n\n\n## Triangle de Sierpiński : Itération 1 \nCette première itération de Sierpiński divise le triangle initial en trois triangles.  \n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"L'aire du triangle 1 est de 0.0625\"\n```\n:::\n:::\n\n\n## Triangle de Sierpiński : Itération 2 \nCette deuxième itération de Sierpiński divise chacun des triangles issus de la première itération en quatre nouveaux triangles. \n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"L'aire du triangle 2 est de 0.015625\"\n```\n:::\n:::\n\n\n## Triangle de Sierpiński : Itération 3\nCette troisième itération de Sierpiński divise chacun des triangles issus de la deuxième itération en quatre nouveaux triangles. \n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"L'aire du triangle 3 est de 0.00390625\"\n```\n:::\n:::\n\n\n## Triangle de Sierpiński : Itération 4\nCette quatrième itération de Sierpiński divise chacun des triangles issus de la troisième itération en quatre nouveaux triangles. \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] \"L'aire du triangle 4 est de 0.0009765625\"\n```\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
