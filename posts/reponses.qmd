@@ -1,0 +1,79 @@
+---
+title: "Réponses aux questions de l'examen"
+author: "Clara Chosse"
+date: "2023-02-23"
+format : 
+  html : 
+    theme: united
+    toc: true
+    toc-location : left
+    toc-title : Table des matières
+categories: [analysis]
+---
+
+#Création du projet de site sous github
+
+## #1 - Décrire la structure du projet
+Le projet quarto blog contient des fichiers et dossiers par défaut. Les fichiers sont les suivants : _quarto.yml, .gitignore, about.qmd, index.qmd et également profile.jpg et styles.css. Il contient un dossier : posts.
+
+## #2
+Les fichiers ont bien été personnalisé. J'ai également changé l'image qui apparaitra dans la présentation du blog. 
+
+## #6
+Le commit et le push permettent d'enregistrer les modifications apportés à un ficher sur le dépot github. Cela permet de ne pas avoir de conflit dans les versions d'un document. 
+On fait dans un premier temps un commit de l'ensemble des fichiers avec un message permettant d'indiquer les modifications effectué. Puis on effectue un git push qui permet d'actualiser le dépot github. 
+
+## #7 
+L’exécution d’un commit et d’un push a entrainé la création d’une nouvelle branche sur GitHub nommé «master». Cela a entrainé la copie du dépôt local de R sur un dépôt distant Github. Le code effectué est sauvegardé.
+
+
+# Un package sous github
+
+## #1
+L'ensemble de ces questions on été traités dans le projet heron. 
+
+## #11 - Que se passe t’il quand vous exécutez la commande remotes::install_github("<votre username>/heron")
+Cette commande permet d’installer un package R depuis github, ici le package heron. 
+
+
+# Post de blog
+
+## #3 - fonction divide_triangle
+On crée dans un premier temps la fonction milieu_segment qui prends en entrée les coordonnées de 2 points et retourne le milieu entre ces deux points. 
+On crée ensuite la fonction divide_triangle qui calcul tout d'abord le milieu de chaque segment du triangle à l'aide de la fonction milieu_segment. Ensuite, elle découpe le triangle initial en sous triangle à l'aide des points moyen et des coordonnées du triangle initial. Enfin, on retire le triangle interieur pour laisser uniquement les 3 triangles crées. 
+
+
+## #4 - fonction divide_list_triangle
+Cette fonction renvoie une nouvelle liste de triangles. 
+Elle prend en entrée une liste de triangle. 
+On initialise une liste vide : new_list_triangle. 
+Ensuite, on utilise une boucle for pour diviser chaque triangle dans la liste d'entrée en 3 sous triangles. Grâce à la fonction apend ces nouveaux triangles sont ajouté à la liste : new_list_triangle.
+
+## #5 
+On utilise la commande suivante dans le terminal R : remotes::install_github("ClaraChosse/heron@master")
+
+## #8 - fonction plot_triangles
+Cette fonction prends en entrée une liste de triangle. 
+On initialise un dataframe vide. 
+On calcul les coordonnées x et y des sommets des triangles. 
+La fonction rbind permet d'ajouter au dataframe. 
+On utilise la fonction ggplot pour tracer les triangles pour chaque itération.
+La fonction geom_polygon permet de tracer les triangles à partir des coordonnées de leurs sommets. 
+La fonction scale_fill_manual permet d'attribuer une couleur aux triangles, ici la couleur noire à tous les triangles. 
+La fonction theme_void permet de supprimer les axess et légendes du graphiques. 
+
+
+## #10 - fonction heron_liste
+Cette fonction calcul la somme des aires des triangles d'une liste de triangle. 
+On initialise une variable sum_aire à 0. 
+On calcul la distance cartesienne des trois cotés du triangles. 
+Puis on applique la fonction heron à ses trois cotés. 
+
+
+## #13
+Grâce à la commande quarto preview dans le terminal on a un apercu de notre blog. 
+
+
+
+
+
