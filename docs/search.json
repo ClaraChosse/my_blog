@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Libraries heron",
+    "section": "",
+    "text": "Le package heron permet de calculer l’aire d’un triangle selon la formule de Héron. La fonction heron prend en entrée trois paramètres correspondant aux tailles des trois cotés du triangles. Cette fonction retourne l’aire du triangle.\nLa fonction est la suivante : \n\nheron <- function(a, b, c) {\n  if (!is.numeric(a) || !is.numeric(b) || !is.numeric(c)) {\n    stop(\"Tous les arguments doivent être numériques\")\n  }\n  if (a < 0 || b < 0 || c < 0) {\n    stop(\"Toutes les valeurs doivent être positives\")\n  }\n  if (a == 0 || b == 0 || c == 0) {\n    warning(\"Une des valeurs est egale a 0\")\n  }\n  s <- (a + b + c) / 2\n  sqrt(s * (s - a) * (s - b) * (s - c))\n}\n\nCe blog présente le triangle de Sierpiński. Celui ci se construit en reliant les milieux des trois cotés du triangle. Chaque itération permet de créer de nouveaux triangles à partir du premier triangle. Chaque triangle est alors remplacé par quatre nouveaux triangles.\n\n\n\n\n\n\n\n\n\nCette première itération de Sierpiński divise le triangle initial en trois triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 1 est de 0.0625\"\n\n\n\n\n\nCette deuxième itération de Sierpiński divise chacun des triangles issus de la première itération en quatre nouveaux triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 2 est de 0.015625\"\n\n\n\n\n\nCette troisième itération de Sierpiński divise chacun des triangles issus de la deuxième itération en quatre nouveaux triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 3 est de 0.00390625\"\n\n\n\n\n\nCette quatrième itération de Sierpiński divise chacun des triangles issus de la troisième itération en quatre nouveaux triangles.\n\n\n\n\n\n[1] \"L'aire du triangle 4 est de 0.0009765625\""
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Bienvenue sur mon blog",
+    "section": "",
+    "text": "Bienvenue dans mon blog !"
+  },
+  {
+    "objectID": "posts/reponses.html",
+    "href": "posts/reponses.html",
+    "title": "Réponses aux questions de l’examen",
+    "section": "",
+    "text": "Le projet quarto blog contient des fichiers et dossiers par défaut. Les fichiers sont les suivants : _quarto.yml, .gitignore, about.qmd, index.qmd et également profile.jpg et styles.css. Il contient un dossier : posts.\n\n\n\nLes fichiers ont bien été personnalisé. J’ai également changé l’image qui apparaitra dans la présentation du blog.\n\n\n\nLe commit et le push permettent d’enregistrer les modifications apportés à un ficher sur le dépot github. Cela permet de ne pas avoir de conflit dans les versions d’un document. On fait dans un premier temps un commit de l’ensemble des fichiers avec un message permettant d’indiquer les modifications effectué. Puis on effectue un git push qui permet d’actualiser le dépot github.\n\n\n\nL’exécution d’un commit et d’un push a entrainé la création d’une nouvelle branche sur GitHub nommé «master». Cela a entrainé la copie du dépôt local de R sur un dépôt distant Github. Le code effectué est sauvegardé."
+  },
+  {
+    "objectID": "posts/reponses.html#section-3",
+    "href": "posts/reponses.html#section-3",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#1",
+    "text": "#1\nL’ensemble de ces questions on été traités dans le projet heron."
+  },
+  {
+    "objectID": "posts/reponses.html#que-se-passe-til-quand-vous-exécutez-la-commande-remotesinstall_githubheron",
+    "href": "posts/reponses.html#que-se-passe-til-quand-vous-exécutez-la-commande-remotesinstall_githubheron",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#11 - Que se passe t’il quand vous exécutez la commande remotes::install_github(“/heron”)",
+    "text": "#11 - Que se passe t’il quand vous exécutez la commande remotes::install_github(“/heron”)\nCette commande permet d’installer un package R depuis github, ici le package heron."
+  },
+  {
+    "objectID": "posts/reponses.html#fonction-divide_triangle",
+    "href": "posts/reponses.html#fonction-divide_triangle",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#3 - fonction divide_triangle",
+    "text": "#3 - fonction divide_triangle\nOn crée dans un premier temps la fonction milieu_segment qui prends en entrée les coordonnées de 2 points et retourne le milieu entre ces deux points. On crée ensuite la fonction divide_triangle qui calcul tout d’abord le milieu de chaque segment du triangle à l’aide de la fonction milieu_segment. Ensuite, elle découpe le triangle initial en sous triangle à l’aide des points moyen et des coordonnées du triangle initial. Enfin, on retire le triangle interieur pour laisser uniquement les 3 triangles crées."
+  },
+  {
+    "objectID": "posts/reponses.html#fonction-divide_list_triangle",
+    "href": "posts/reponses.html#fonction-divide_list_triangle",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#4 - fonction divide_list_triangle",
+    "text": "#4 - fonction divide_list_triangle\nCette fonction renvoie une nouvelle liste de triangles. Elle prend en entrée une liste de triangle. On initialise une liste vide : new_list_triangle. Ensuite, on utilise une boucle for pour diviser chaque triangle dans la liste d’entrée en 3 sous triangles. Grâce à la fonction apend ces nouveaux triangles sont ajouté à la liste : new_list_triangle."
+  },
+  {
+    "objectID": "posts/reponses.html#section-4",
+    "href": "posts/reponses.html#section-4",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#5",
+    "text": "#5\nOn utilise la commande suivante dans le terminal R : remotes::install_github(“ClaraChosse/heron@master”)"
+  },
+  {
+    "objectID": "posts/reponses.html#fonction-plot_triangles",
+    "href": "posts/reponses.html#fonction-plot_triangles",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#8 - fonction plot_triangles",
+    "text": "#8 - fonction plot_triangles\nCette fonction prends en entrée une liste de triangle. On initialise un dataframe vide. On calcul les coordonnées x et y des sommets des triangles. La fonction rbind permet d’ajouter au dataframe. On utilise la fonction ggplot pour tracer les triangles pour chaque itération. La fonction geom_polygon permet de tracer les triangles à partir des coordonnées de leurs sommets. La fonction scale_fill_manual permet d’attribuer une couleur aux triangles, ici la couleur noire à tous les triangles. La fonction theme_void permet de supprimer les axess et légendes du graphiques."
+  },
+  {
+    "objectID": "posts/reponses.html#fonction-heron_liste",
+    "href": "posts/reponses.html#fonction-heron_liste",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#10 - fonction heron_liste",
+    "text": "#10 - fonction heron_liste\nCette fonction calcul la somme des aires des triangles d’une liste de triangle. On initialise une variable sum_aire à 0. On calcul la distance cartesienne des trois cotés du triangles. Puis on applique la fonction heron à ses trois cotés."
+  },
+  {
+    "objectID": "posts/reponses.html#section-5",
+    "href": "posts/reponses.html#section-5",
+    "title": "Réponses aux questions de l’examen",
+    "section": "#13",
+    "text": "#13\nGrâce à la commande quarto preview dans le terminal on a un apercu de notre blog."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my_blog",
+    "section": "",
+    "text": "packages\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nClara Chosse\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nClara Chosse\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\nClara Chosse\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  }
+]
