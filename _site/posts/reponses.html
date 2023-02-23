@@ -131,10 +131,13 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">Table des matières</h2>
    
   <ul>
-  <li><a href="#décrire-la-structure-du-projet" id="toc-décrire-la-structure-du-projet" class="nav-link active" data-scroll-target="#décrire-la-structure-du-projet">#1 - Décrire la structure du projet</a></li>
+  <li><a href="#création-du-projet-de-site-sous-github" id="toc-création-du-projet-de-site-sous-github" class="nav-link active" data-scroll-target="#création-du-projet-de-site-sous-github">Création du projet de site sous github</a>
+  <ul class="collapse">
+  <li><a href="#décrire-la-structure-du-projet" id="toc-décrire-la-structure-du-projet" class="nav-link" data-scroll-target="#décrire-la-structure-du-projet">#1 - Décrire la structure du projet</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">#2</a></li>
   <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">#6</a></li>
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">#7</a></li>
+  </ul></li>
   <li><a href="#un-package-sous-github" id="toc-un-package-sous-github" class="nav-link" data-scroll-target="#un-package-sous-github">Un package sous github</a>
   <ul class="collapse">
   <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">#1</a></li>
@@ -142,7 +145,12 @@ ul.task-list{list-style: none;}
   </ul></li>
   <li><a href="#post-de-blog" id="toc-post-de-blog" class="nav-link" data-scroll-target="#post-de-blog">Post de blog</a>
   <ul class="collapse">
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">#1</a></li>
+  <li><a href="#fonction-divide_triangle" id="toc-fonction-divide_triangle" class="nav-link" data-scroll-target="#fonction-divide_triangle">#3 - fonction divide_triangle</a></li>
+  <li><a href="#fonction-divide_list_triangle" id="toc-fonction-divide_list_triangle" class="nav-link" data-scroll-target="#fonction-divide_list_triangle">#4 - fonction divide_list_triangle</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">#5</a></li>
+  <li><a href="#fonction-plot_triangles" id="toc-fonction-plot_triangles" class="nav-link" data-scroll-target="#fonction-plot_triangles">#8 - fonction plot_triangles</a></li>
+  <li><a href="#fonction-heron_liste" id="toc-fonction-heron_liste" class="nav-link" data-scroll-target="#fonction-heron_liste">#10 - fonction heron_liste</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">#13</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -156,7 +164,8 @@ ul.task-list{list-style: none;}
 
 
 
-<p>#Création du projet de site sous github</p>
+<section id="création-du-projet-de-site-sous-github" class="level1">
+<h1>Création du projet de site sous github</h1>
 <section id="décrire-la-structure-du-projet" class="level2">
 <h2 class="anchored" data-anchor-id="décrire-la-structure-du-projet">#1 - Décrire la structure du projet</h2>
 <p>Le projet quarto blog contient des fichiers et dossiers par défaut. Les fichiers sont les suivants : _quarto.yml, .gitignore, about.qmd, index.qmd et également profile.jpg et styles.css. Il contient un dossier : posts.</p>
@@ -173,6 +182,7 @@ ul.task-list{list-style: none;}
 <h2 class="anchored" data-anchor-id="section-2">#7</h2>
 <p>L’exécution d’un commit et d’un push a entrainé la création d’une nouvelle branche sur GitHub nommé «master». Cela a entrainé la copie du dépôt local de R sur un dépôt distant Github. Le code effectué est sauvegardé.</p>
 </section>
+</section>
 <section id="un-package-sous-github" class="level1">
 <h1>Un package sous github</h1>
 <section id="section-3" class="level2">
@@ -186,8 +196,29 @@ ul.task-list{list-style: none;}
 </section>
 <section id="post-de-blog" class="level1">
 <h1>Post de blog</h1>
+<section id="fonction-divide_triangle" class="level2">
+<h2 class="anchored" data-anchor-id="fonction-divide_triangle">#3 - fonction divide_triangle</h2>
+<p>On crée dans un premier temps la fonction milieu_segment qui prends en entrée les coordonnées de 2 points et retourne le milieu entre ces deux points. On crée ensuite la fonction divide_triangle qui calcul tout d’abord le milieu de chaque segment du triangle à l’aide de la fonction milieu_segment. Ensuite, elle découpe le triangle initial en sous triangle à l’aide des points moyen et des coordonnées du triangle initial. Enfin, on retire le triangle interieur pour laisser uniquement les 3 triangles crées.</p>
+</section>
+<section id="fonction-divide_list_triangle" class="level2">
+<h2 class="anchored" data-anchor-id="fonction-divide_list_triangle">#4 - fonction divide_list_triangle</h2>
+<p>Cette fonction renvoie une nouvelle liste de triangles. Elle prend en entrée une liste de triangle. On initialise une liste vide : new_list_triangle. Ensuite, on utilise une boucle for pour diviser chaque triangle dans la liste d’entrée en 3 sous triangles. Grâce à la fonction apend ces nouveaux triangles sont ajouté à la liste : new_list_triangle.</p>
+</section>
 <section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">#1</h2>
+<h2 class="anchored" data-anchor-id="section-4">#5</h2>
+<p>On utilise la commande suivante dans le terminal R : remotes::install_github(“ClaraChosse/heron@master”)</p>
+</section>
+<section id="fonction-plot_triangles" class="level2">
+<h2 class="anchored" data-anchor-id="fonction-plot_triangles">#8 - fonction plot_triangles</h2>
+<p>Cette fonction prends en entrée une liste de triangle. On initialise un dataframe vide. On calcul les coordonnées x et y des sommets des triangles. La fonction rbind permet d’ajouter au dataframe. On utilise la fonction ggplot pour tracer les triangles pour chaque itération. La fonction geom_polygon permet de tracer les triangles à partir des coordonnées de leurs sommets. La fonction scale_fill_manual permet d’attribuer une couleur aux triangles, ici la couleur noire à tous les triangles. La fonction theme_void permet de supprimer les axess et légendes du graphiques.</p>
+</section>
+<section id="fonction-heron_liste" class="level2">
+<h2 class="anchored" data-anchor-id="fonction-heron_liste">#10 - fonction heron_liste</h2>
+<p>Cette fonction calcul la somme des aires des triangles d’une liste de triangle. On initialise une variable sum_aire à 0. On calcul la distance cartesienne des trois cotés du triangles. Puis on applique la fonction heron à ses trois cotés.</p>
+</section>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">#13</h2>
+<p>Grâce à la commande quarto preview dans le terminal on a un apercu de notre blog.</p>
 
 
 </section>

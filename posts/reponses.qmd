@@ -11,7 +11,7 @@ format :
 categories: [analysis]
 ---
 
-#Création du projet de site sous github
+# Création du projet de site sous github
 
 ## #1 - Décrire la structure du projet
 Le projet quarto blog contient des fichiers et dossiers par défaut. Les fichiers sont les suivants : _quarto.yml, .gitignore, about.qmd, index.qmd et également profile.jpg et styles.css. Il contient un dossier : posts.
